@@ -1,6 +1,6 @@
 {% set name = "so4gp" %}
-{% set version = "0.7.3" %}
-{% set python_min = "3.12" %}
+{% set version = "0.8.9" %}
+{% set python_min = "3.14" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/so4gp-{{ version }}.tar.gz
-  sha256: 80a44ba7a9a2343f91fa4f4065fcf9ef167ae32b1038d880f7af0550e2bca88c
+  sha256: 4a3484b08a48773a968007347bb6047a78253b05c91c48515a510601fb578e9a
 
 build:
   noarch: python
@@ -18,17 +18,18 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=80.9
+    - setuptools >=82.0
     - pip
   run:
     - python >={{ python_min }}
-    - numpy >=2.3.2,<2.4.dev0
-    - pandas >=2.3.1,<2.4.dev0
-    - scikit-fuzzy >=0.5.0,<0.6.dev0
-    - scikit-learn >=1.7.1,<1.8.dev0
-    - python-dateutil >=2.9.0.post0,<2.10.dev0
-    - tabulate >=0.9.0,<0.10.dev0
-    - seaborn >=0.13.2,<0.14.dev0
+    - numpy ==2.4.6
+    - pandas ==3.0.3
+    - tabulate ==0.10.0
+    - scikit-fuzzy ==0.5.0
+    - scikit-learn ==1.9.0
+    - seaborn ==0.13.2
+    - matplotlib ==3.11.0
+    - python-dateutil ==2.9.0
 
 test:
   imports:
