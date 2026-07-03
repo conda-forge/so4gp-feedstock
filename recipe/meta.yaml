@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/so4gp-{{ version }}.tar.gz
-  sha256: 4a3484b08a48773a968007347bb6047a78253b05c91c48515a510601fb578e9a
+  sha256: f20917abc776732a7dd1187ed94e27b9d74eca105c04c81e064368882361e58e
 
 build:
   noarch: python
