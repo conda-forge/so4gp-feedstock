@@ -1,5 +1,5 @@
 {% set name = "so4gp" %}
-{% set version = "0.9.3" %}
+{% set version = "0.9.6" %}
 {% set python_min = "3.14" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/so4gp-{{ version }}.tar.gz
-  sha256: f20917abc776732a7dd1187ed94e27b9d74eca105c04c81e064368882361e58e
+  sha256: 7ed6dedfaac60116b8e98e42f8f05a007220a756dfee5aa9cf1a9704207864be
 
 build:
   noarch: python
