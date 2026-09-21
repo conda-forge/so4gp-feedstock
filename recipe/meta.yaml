@@ -31,7 +31,7 @@ requirements:
     - matplotlib-base ==3.11.0
     - python-dateutil ==2.9.0
     - mcp ==1.28.1
-    - pytorch ==2.14
+    - pytorch ==2.13
 
 test:
   imports:
