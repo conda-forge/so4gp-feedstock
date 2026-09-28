@@ -22,13 +22,13 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - numpy ==2.5.0
-    - pandas ==3.0.3
+    - numpy ==2.5.3
+    - pandas ==3.0.5
     - tabulate ==0.10.0
     - scikit-fuzzy ==0.5.0
-    - scikit-learn ==1.9.0
+    - scikit-learn ==1.9.1
     - seaborn ==0.13.2
-    - matplotlib-base ==3.11.0
+    - matplotlib-base ==3.11.2
     - python-dateutil ==2.9.0
     - pytorch ==2.13
 
